@@ -1,11 +1,11 @@
 import { TestBed, inject } from '@angular/core/testing';
-
 import { HeadersService } from './headers.service';
-
+import { HttpClientModule } from '@angular/common/http';
 describe('HeadersService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [HeadersService]
+      providers: [HeadersService],
+      imports: [HttpClientModule]
     });
   });
 
