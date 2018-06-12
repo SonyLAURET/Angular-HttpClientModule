@@ -5,10 +5,7 @@ import { HttpClient } from '@angular/common/http';
 const API_BASE_URL: string = 'https://api.github.com/';
 const API_USERS: string = 'users/';
 
-@Injectable({
-  providedIn: 'root'
-})
-
+@Injectable()
 export class GithubApiService {
   constructor(private http: HttpClient) { }
   getUser(login: string) {
